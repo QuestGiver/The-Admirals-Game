@@ -74,6 +74,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4047946707992374}
   - component: {fileID: 198787361095142380}
+  - component: {fileID: 114519425761872252}
   - component: {fileID: 199408299022203758}
   m_Layer: 0
   m_Name: UnityChanFlames
@@ -121,9 +122,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1374583074427842}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 55.3, y: 24.83, z: 185}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -31.4, y: 0.94, z: -53.51}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 4943086339032218}
   - {fileID: 4572099411883628}
@@ -315,6 +316,27 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &114519425761872252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1374583074427842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2204400676e267458349e5e8df0334c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactables:
+  - {fileID: 0}
+  enter: 0
+  exit: 0
+  inside: 1
+  outside: 0
+  enterAction: 0
+  exitAction: 0
+  insideAction: 1
+  outsideAction: 0
 --- !u!198 &198245654365948340
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -323,7 +345,7 @@ ParticleSystem:
   m_GameObject: {fileID: 1711079917370626}
   serializedVersion: 5
   lengthInSec: 1
-  simulationSpeed: 1
+  simulationSpeed: 0.6
   stopAction: 0
   looping: 1
   prewarm: 0
@@ -447,7 +469,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 39.1
+      scalar: 12.04
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4916,7 +4938,7 @@ ParticleSystem:
   simulationSpeed: 1
   stopAction: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -5037,7 +5059,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 180
+      scalar: 10
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5677,9 +5699,9 @@ ParticleSystem:
     serializedVersion: 4
     rateOverTime:
       serializedVersion: 2
-      minMaxState: 0
-      scalar: 2
-      minScalar: 10
+      minMaxState: 3
+      scalar: 3.57
+      minScalar: 0.5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -7167,7 +7189,7 @@ ParticleSystem:
     enabled: 0
     multiplier: 1
   ClampVelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -7330,7 +7352,7 @@ ParticleSystem:
     magnitude:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 5
+      scalar: 0
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -7439,7 +7461,7 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
   NoiseModule:
-    enabled: 1
+    enabled: 0
     strength:
       serializedVersion: 2
       minMaxState: 0
@@ -8371,7 +8393,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -8549,15 +8571,15 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 4294967295
+      m_Bits: 1537
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 0
+    enabled: 1
     collisionShape0: {fileID: 0}
     collisionShape1: {fileID: 0}
     collisionShape2: {fileID: 0}
@@ -8575,7 +8597,7 @@ ParticleSystem:
     subEmitters:
     - serializedVersion: 2
       emitter: {fileID: 198981077903760014}
-      type: 1
+      type: 2
       properties: 4
     - serializedVersion: 2
       emitter: {fileID: 198951053871816240}
@@ -8583,7 +8605,7 @@ ParticleSystem:
       properties: 4
     - serializedVersion: 2
       emitter: {fileID: 198245654365948340}
-      type: 1
+      type: 2
       properties: 4
   LightsModule:
     enabled: 1
@@ -14177,7 +14199,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 43
+      scalar: 3.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -14231,7 +14253,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 1, g: 0, b: 0, a: 1}
+      maxColor: {r: 1, g: 0, b: 0, a: 0.1882353}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -16574,7 +16596,7 @@ ParticleSystem:
     strength:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.46
+      scalar: 0.8
       minScalar: 1
       maxCurve:
         serializedVersion: 2
