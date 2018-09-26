@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4267020703141574}
   - component: {fileID: 198027052411851424}
   - component: {fileID: 199154076521281766}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4075839444828682}
   - component: {fileID: 33133832940412462}
   - component: {fileID: 23565513055643280}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: StarShipModelTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4786066540151914}
   - component: {fileID: 33715526865692640}
   - component: {fileID: 23943037886573472}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4599893718138180}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretPrefab (3)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4535796810812156}
   - component: {fileID: 108075639244130562}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4622969428528288}
   - component: {fileID: 198319514830294290}
   - component: {fileID: 199855463025377854}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4004838939293350}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 198880304966199742}
   - component: {fileID: 114184342937558578}
   - component: {fileID: 199574383273500590}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MacroBolter (2)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 4528370180259590}
   - component: {fileID: 198375566443972902}
   - component: {fileID: 199480918503374424}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,7 +168,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4047062392728278}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -183,7 +183,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4204810949214382}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +202,7 @@ GameObject:
   - component: {fileID: 199805398737381682}
   - component: {fileID: 54609116612886994}
   - component: {fileID: 75761708038552938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +219,7 @@ GameObject:
   - component: {fileID: 4172761686539770}
   - component: {fileID: 33505742464146426}
   - component: {fileID: 23923483103671850}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +238,7 @@ GameObject:
   - component: {fileID: 199806676776441852}
   - component: {fileID: 54607071745754544}
   - component: {fileID: 75723435949901160}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,7 +256,7 @@ GameObject:
   - component: {fileID: 198953864746874592}
   - component: {fileID: 114416029162110584}
   - component: {fileID: 199655286197532646}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MacroBolter (4)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -274,7 +274,7 @@ GameObject:
   - component: {fileID: 198319547249580732}
   - component: {fileID: 114148356309282550}
   - component: {fileID: 199854151840019524}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MacroBolter (1)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -291,7 +291,7 @@ GameObject:
   - component: {fileID: 4381473954366962}
   - component: {fileID: 198571053486575864}
   - component: {fileID: 199129394733838792}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +308,7 @@ GameObject:
   - component: {fileID: 4577038718482006}
   - component: {fileID: 33096909564827846}
   - component: {fileID: 23287474167189086}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,7 +324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4053474757733866}
   - component: {fileID: 108419202593896678}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -339,7 +339,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4343350558227274}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: StarShipModelTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +356,7 @@ GameObject:
   - component: {fileID: 4038303526271754}
   - component: {fileID: 198050094938225336}
   - component: {fileID: 199407944002864146}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +371,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4716278426372126}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretPrefab (1)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -386,7 +386,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4956073287036796}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretPrefab (4)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -404,7 +404,7 @@ GameObject:
   - component: {fileID: 198564836571884250}
   - component: {fileID: 114433611407672702}
   - component: {fileID: 199962724524381032}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MacroBolter (3)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -423,7 +423,7 @@ GameObject:
   - component: {fileID: 199008433324825516}
   - component: {fileID: 54729020088152034}
   - component: {fileID: 75877588192620966}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +440,7 @@ GameObject:
   - component: {fileID: 4648466670541028}
   - component: {fileID: 33179360067129630}
   - component: {fileID: 23995734320286682}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +456,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4499233832320480}
   - component: {fileID: 108694305097943634}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4390538991303820}
   - component: {fileID: 108094988135008278}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +487,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4073939048896342}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretPrefab (2)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 199144381392656992}
   - component: {fileID: 54781187866229646}
   - component: {fileID: 75089357055437778}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +523,7 @@ GameObject:
   - component: {fileID: 4488203821062672}
   - component: {fileID: 33162396722763670}
   - component: {fileID: 23375795857758390}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +540,7 @@ GameObject:
   - component: {fileID: 4923946223587474}
   - component: {fileID: 198452323824576820}
   - component: {fileID: 199033429847310896}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 4165702546876344}
   - component: {fileID: 33652488239374368}
   - component: {fileID: 23569371932592938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +576,7 @@ GameObject:
   - component: {fileID: 114981611370279766}
   - component: {fileID: 114945938873852582}
   - component: {fileID: 195383718418030482}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Battleship
   m_TagString: Ship
   m_Icon: {fileID: 0}
@@ -591,7 +591,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4909841555448476}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretPrefab
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 198640448248245278}
   - component: {fileID: 114733850280327758}
   - component: {fileID: 199563054218080240}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MacroBolter (4)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -626,7 +626,7 @@ GameObject:
   - component: {fileID: 4152151374916768}
   - component: {fileID: 198706745326267348}
   - component: {fileID: 199219682097005938}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4817127594282212}
   - component: {fileID: 108144920576220926}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +659,7 @@ GameObject:
   - component: {fileID: 4465244126806558}
   - component: {fileID: 198232867239675100}
   - component: {fileID: 199671032062035018}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +675,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4816592447136726}
   - component: {fileID: 108861157649174216}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   - component: {fileID: 198388049076864572}
   - component: {fileID: 114589349686737876}
   - component: {fileID: 199459161361872996}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: MacroBolter (3)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -710,7 +710,7 @@ GameObject:
   - component: {fileID: 4740804062155238}
   - component: {fileID: 198828592708213148}
   - component: {fileID: 199137629422785204}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,7 +729,7 @@ GameObject:
   - component: {fileID: 199412475950379712}
   - component: {fileID: 54436101976455728}
   - component: {fileID: 75375725296387656}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -744,7 +744,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4675743392096406}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: TurretPrefab (5)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -759,7 +759,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4192077943848614}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +776,7 @@ GameObject:
   - component: {fileID: 4985210312755800}
   - component: {fileID: 198415094232290582}
   - component: {fileID: 199561089028360276}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +793,7 @@ GameObject:
   - component: {fileID: 4113021573166702}
   - component: {fileID: 198498003101092152}
   - component: {fileID: 199306802203672022}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,7 +808,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4452441432170268}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -827,7 +827,7 @@ GameObject:
   - component: {fileID: 199714421335410864}
   - component: {fileID: 54319850489784100}
   - component: {fileID: 75117151220291716}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +844,7 @@ GameObject:
   - component: {fileID: 4320317959286764}
   - component: {fileID: 198536010631399098}
   - component: {fileID: 199598153940744866}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +859,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4129689683470984}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2356,7 +2356,9 @@ MonoBehaviour:
   - {fileID: 4956073287036796}
   - {fileID: 4675743392096406}
   turretGuns: []
+  _targetPosition: {x: 0, y: 0, z: 0}
   rotate: 0
+  traversPercent: 0
   traverseSpeed: 3
 --- !u!114 &114981611370279766
 MonoBehaviour:
@@ -2373,8 +2375,12 @@ MonoBehaviour:
     health: 300
     speed: 30
     radarRange: 50
-    team: 10
-    enemyTeam: 9
+    team:
+      serializedVersion: 2
+      m_Bits: 1024
+    enemyTeam:
+      serializedVersion: 2
+      m_Bits: 512
   turretController: {fileID: 114945938873852582}
   agent: {fileID: 195383718418030482}
   _destination: {x: 0, y: 0, z: 0}

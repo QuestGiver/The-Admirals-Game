@@ -32,7 +32,6 @@ public class AbstractShip : MonoBehaviour
 
     void Start()
     {
-        stats.team = gameObject.layer;
         turretController.enemyTeam = stats.enemyTeam;
         StartCoroutine(Detection());
     }

@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4871131811104416}
   - component: {fileID: 198552901970356968}
   - component: {fileID: 199184493647590320}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: PebbleDrop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -36,7 +36,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4857844778783192}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarshipModelOne
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -53,7 +53,7 @@ GameObject:
   - component: {fileID: 4055954659883422}
   - component: {fileID: 198233000253929084}
   - component: {fileID: 199487198281723696}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: RockBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   - component: {fileID: 4305961999307458}
   - component: {fileID: 198505341284530464}
   - component: {fileID: 199362890856735106}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: FlameBurst
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 114374766557633278}
   - component: {fileID: 114370067127504262}
   - component: {fileID: 195189873999187466}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Destroyer
   m_TagString: Ship
   m_Icon: {fileID: 0}
@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 4489971429270712}
   - component: {fileID: 33566099296539742}
   - component: {fileID: 23504713949799450}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: StarshipModelOne
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -124,7 +124,7 @@ GameObject:
   - component: {fileID: 198793531772492130}
   - component: {fileID: 114833375579729340}
   - component: {fileID: 199058322928680234}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: InfernoBolter
   m_TagString: Inferno
   m_Icon: {fileID: 0}
@@ -141,7 +141,7 @@ GameObject:
   - component: {fileID: 4066694159950916}
   - component: {fileID: 198093378354079524}
   - component: {fileID: 199937144484135778}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Lava
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -329,7 +329,9 @@ MonoBehaviour:
   turrets:
   - {fileID: 4857844778783192}
   turretGuns: []
+  _targetPosition: {x: 0, y: 0, z: 0}
   rotate: 0
+  traversPercent: 0
   traverseSpeed: 3
 --- !u!114 &114374766557633278
 MonoBehaviour:
@@ -346,8 +348,12 @@ MonoBehaviour:
     health: 200
     speed: 40
     radarRange: 50
-    team: 9
-    enemyTeam: 10
+    team:
+      serializedVersion: 2
+      m_Bits: 512
+    enemyTeam:
+      serializedVersion: 2
+      m_Bits: 1024
   turretController: {fileID: 114370067127504262}
   agent: {fileID: 195189873999187466}
   _destination: {x: 0, y: 0, z: 0}
