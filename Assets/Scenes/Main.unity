@@ -152,6 +152,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 114374766557633278, guid: ca317e254cbb99341b465efd6f39aed2,
+        type: 2}
+      propertyPath: stats.team
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114374766557633278, guid: ca317e254cbb99341b465efd6f39aed2,
+        type: 2}
+      propertyPath: stats.enemyTeam
+      value: 9
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ca317e254cbb99341b465efd6f39aed2, type: 2}
   m_IsPrefabAsset: 0
@@ -713,7 +723,7 @@ GameObject:
   - component: {fileID: 877807140}
   - component: {fileID: 877807139}
   - component: {fileID: 877807138}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CanvasView
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1091,6 +1101,16 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
+    - target: {fileID: 114981611370279766, guid: c294c165293d913429871a2108c37e5e,
+        type: 2}
+      propertyPath: stats.team
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114981611370279766, guid: c294c165293d913429871a2108c37e5e,
+        type: 2}
+      propertyPath: stats.enemyTeam
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c294c165293d913429871a2108c37e5e, type: 2}
   m_IsPrefabAsset: 0
@@ -1155,6 +1175,10 @@ Prefab:
       propertyPath: InitialModule.startSize.scalar
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1118431489692834, guid: 97b96bd2daaa8824fa6e91a54a74ad34, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 97b96bd2daaa8824fa6e91a54a74ad34, type: 2}
   m_IsPrefabAsset: 0
@@ -1196,21 +1220,6 @@ Prefab:
     - target: {fileID: 4631694801984290, guid: 429c38593abb29d47aa1e68c63dcf216, type: 2}
       propertyPath: m_RootOrder
       value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 114490636799662778, guid: 429c38593abb29d47aa1e68c63dcf216,
-        type: 2}
-      propertyPath: stats.team.m_Bits
-      value: 512
-      objectReference: {fileID: 0}
-    - target: {fileID: 114490636799662778, guid: 429c38593abb29d47aa1e68c63dcf216,
-        type: 2}
-      propertyPath: stats.team
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 114490636799662778, guid: 429c38593abb29d47aa1e68c63dcf216,
-        type: 2}
-      propertyPath: stats.enemyTeam
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429c38593abb29d47aa1e68c63dcf216, type: 2}
@@ -1433,7 +1442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!65 &2009994631
 BoxCollider:
   m_ObjectHideFlags: 0
