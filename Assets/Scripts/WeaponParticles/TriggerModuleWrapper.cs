@@ -53,7 +53,7 @@ public class TriggerModuleWrapper : MonoBehaviour
         inside = GUI.Toggle(new Rect(25, 120, 200, 30), inside, "Inside Callback");
         outside = GUI.Toggle(new Rect(25, 160, 200, 30), outside, "Outside Callback");
     }
-    
+
     //void OnParticleTrigger()
     //{
     //    if (enter)
