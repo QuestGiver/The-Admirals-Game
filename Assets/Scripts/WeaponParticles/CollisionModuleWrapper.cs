@@ -7,7 +7,21 @@ public class CollisionModuleWrapper : MonoBehaviour
     private ParticleSystem ps;
 
     [SerializeField]
-    public int Team = 9;
+    private int _enemyTeam;
+
+    public int EnemyTeam
+    {
+        get
+        {
+            return _enemyTeam;
+        }
+
+        set
+        {
+            _enemyTeam = value;
+            onSetEnemyTeam();
+        }
+    }
 
 
     // Use this for initialization
@@ -23,9 +37,12 @@ public class CollisionModuleWrapper : MonoBehaviour
         var col = ps.collision;
         col.enabled = true;
 
-        col.collidesWith = (1 << Team);
+    }
 
-
+    void onSetEnemyTeam()
+    {
+        var col = ps.collision;
+        col.collidesWith = (col.collidesWith | (1 << EnemyTeam));//EnemyTeam;
     }
 
 

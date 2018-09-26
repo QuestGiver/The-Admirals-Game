@@ -2274,7 +2274,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!114 &114184342937558578
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2286,7 +2286,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!114 &114416029162110584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2298,7 +2298,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!114 &114433611407672702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2310,7 +2310,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!114 &114589349686737876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2322,7 +2322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!114 &114733850280327758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2334,7 +2334,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!114 &114945938873852582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2356,7 +2356,7 @@ MonoBehaviour:
   - {fileID: 4956073287036796}
   - {fileID: 4675743392096406}
   turretGuns: []
-  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosition: {fileID: 0}
   rotate: 0
   traversPercent: 0
   traverseSpeed: 3
@@ -2375,12 +2375,8 @@ MonoBehaviour:
     health: 300
     speed: 30
     radarRange: 50
-    team:
-      serializedVersion: 2
-      m_Bits: 1024
-    enemyTeam:
-      serializedVersion: 2
-      m_Bits: 512
+    team: 10
+    enemyTeam: 9
   turretController: {fileID: 114945938873852582}
   agent: {fileID: 195383718418030482}
   _destination: {x: 0, y: 0, z: 0}
@@ -28650,7 +28646,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -28828,7 +28824,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1537
+      m_Bits: 0
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -37790,7 +37786,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -37968,7 +37964,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1537
+      m_Bits: 0
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -65347,7 +65343,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -65525,7 +65521,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1537
+      m_Bits: 0
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -83667,7 +83663,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -83845,7 +83841,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1537
+      m_Bits: 0
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -106577,7 +106573,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -106755,7 +106751,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1537
+      m_Bits: 0
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
@@ -111184,7 +111180,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
     type: 1
     collisionMode: 0
@@ -111362,7 +111358,7 @@ ParticleSystem:
     radiusScale: 1
     collidesWith:
       serializedVersion: 2
-      m_Bits: 1537
+      m_Bits: 0
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5

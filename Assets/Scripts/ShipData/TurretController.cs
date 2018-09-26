@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TurretController : MonoBehaviour
 {
-
-    public int enemyTeam;
+    [SerializeField]
+    private int enemyTeam;
 
     [SerializeField]
     private bool testFire = false;
@@ -16,15 +16,16 @@ public class TurretController : MonoBehaviour
     private List<ParticleSystem> turretGuns;
 
     [SerializeField]
-    private Vector3 _targetPosition;
+    private Transform _targetPosition;
     [SerializeField]
 
 
     public bool rotate = false;
+    public float traversPercent = 0;
+    public float traverseSpeed = 0.5f;
 
 
-
-    public Vector3 TargetPosition
+    public Transform TargetPosition
     {
         get
         {
@@ -46,8 +47,21 @@ public class TurretController : MonoBehaviour
         }
     }
 
-    public float traversPercent = 0;
-    public float traverseSpeed = 3;
+    public int EnemyTeam
+    {
+        get
+        {
+            return enemyTeam;
+        }
+
+        set
+        {
+            enemyTeam = value;
+            onSetEnemyTeam();
+        }
+    }
+
+
     // Use this for initialization
     void Start()
     {
@@ -62,11 +76,22 @@ public class TurretController : MonoBehaviour
             emit.enabled = false ;
 
 
-            turrets[i].GetComponentInChildren<CollisionModuleWrapper>().Team = enemyTeam;
+            //turrets[i].GetComponentInChildren<CollisionModuleWrapper>().EnemyTeam = EnemyTeam;
 
 
         }
         
+    }
+
+
+    void onSetEnemyTeam()
+    {
+        for (int i = 0; i < turrets.Length; i++)
+        {
+
+            turrets[i].GetComponentInChildren<CollisionModuleWrapper>().EnemyTeam = EnemyTeam;
+
+        }
     }
 
     // Update is called once per frame
@@ -97,15 +122,24 @@ public class TurretController : MonoBehaviour
             Debug.Log("Attemting to rotate");
             for (int i = 0; i < turrets.Length; i++)
             {
-                Debug.Log("iteration");
-                traversPercent += Time.deltaTime * traverseSpeed;
-                Vector3.Slerp(turrets[i].rotation.eulerAngles, _targetPosition - turrets[i].transform.position, traversPercent);
+                Debug.Log("iterating rotation loop");
+
+
+
+                Vector3 dir = (_targetPosition.position - turrets[i].position).normalized;
+                Quaternion newRotation = Quaternion.LookRotation(dir, turrets[i].transform.up);
+
+                traversPercent = Time.deltaTime * traverseSpeed;
+                turrets[i].rotation =  Quaternion.Slerp(turrets[i].rotation, newRotation, traversPercent);
+
+                turrets[i].localEulerAngles = new Vector3(0f, turrets[i].localEulerAngles.y, 0f);
+
                 if (traversPercent >= 1)
                 {
                     traversPercent = 1;
                 }
 
-                if (traversPercent >= 0.7)
+                if (traversPercent >= 0.03)
                 {
                     
                     EnableFiring(i, true);

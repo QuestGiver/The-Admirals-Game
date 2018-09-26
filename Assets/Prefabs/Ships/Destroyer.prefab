@@ -329,7 +329,7 @@ MonoBehaviour:
   turrets:
   - {fileID: 4857844778783192}
   turretGuns: []
-  _targetPosition: {x: 0, y: 0, z: 0}
+  _targetPosition: {fileID: 0}
   rotate: 0
   traversPercent: 0
   traverseSpeed: 3
@@ -348,12 +348,8 @@ MonoBehaviour:
     health: 200
     speed: 40
     radarRange: 50
-    team:
-      serializedVersion: 2
-      m_Bits: 512
-    enemyTeam:
-      serializedVersion: 2
-      m_Bits: 1024
+    team: 9
+    enemyTeam: 10
   turretController: {fileID: 114370067127504262}
   agent: {fileID: 195189873999187466}
   _destination: {x: 0, y: 0, z: 0}
@@ -368,7 +364,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 540c8ae0ea3c63e45af3c114c1a08ac2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Team: 9
+  _enemyTeam: 0
 --- !u!195 &195189873999187466
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -18748,7 +18744,7 @@ ParticleSystem:
   simulationSpeed: 10
   stopAction: 0
   looping: 1
-  prewarm: 1
+  prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
@@ -22182,7 +22178,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 3
     type: 1
     collisionMode: 0

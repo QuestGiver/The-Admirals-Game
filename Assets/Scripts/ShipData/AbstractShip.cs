@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine.AI;
 using UnityEngine;
+using System;
 
 
 [System.Serializable]
@@ -10,8 +11,11 @@ public struct ShipStats
     public int health;
     public int speed;
     public int radarRange;
-    public LayerMask team;
-    public LayerMask enemyTeam;
+
+
+    
+    public int team;
+    public int enemyTeam;
 }
 
 
@@ -23,6 +27,10 @@ public class AbstractShip : MonoBehaviour
     public TurretController turretController;
     public NavMeshAgent agent;
 
+    LayerMask nativeTeam;
+    LayerMask nativeEnemyTeam;
+
+
     [SerializeField]
     private Vector3 _destination;
     private void Reset()//on clicking reset button in editor
@@ -32,7 +40,19 @@ public class AbstractShip : MonoBehaviour
 
     void Start()
     {
-        turretController.enemyTeam = stats.enemyTeam;
+
+        nativeTeam = (nativeTeam | (1 << stats.team));
+        nativeEnemyTeam = (nativeEnemyTeam | (1 << stats.enemyTeam));
+
+
+        if (stats.team != gameObject.layer)
+        {
+            gameObject.layer = stats.team;
+            //Debug.LogError("Ship team and and object layer do not match");
+        }
+
+            //.layer = (stats.team | (1 << ));
+            turretController.EnemyTeam = stats.enemyTeam;
         StartCoroutine(Detection());
     }
 
@@ -55,7 +75,7 @@ public class AbstractShip : MonoBehaviour
         agent.destination = _destination;
     }
 
-
+    public Vector3 itemPos;
 
     public virtual IEnumerator Detection()
     {
@@ -64,8 +84,13 @@ public class AbstractShip : MonoBehaviour
             Debug.Log("Running Detection");
 
 
-            foreach (Collider item in Physics.OverlapSphere(transform.position, stats.radarRange, stats.team))
+            foreach (Collider item in Physics.OverlapSphere(transform.position, stats.radarRange, nativeTeam))
             {
+                if (gameObject.name == "Battleship")
+                {
+                    Debug.Log(nativeTeam.value);
+                    Debug.Log(nativeEnemyTeam.value);
+                }
                 if (item != null)
                 {
                     Debug.Log("checkpoint 1");
@@ -73,15 +98,20 @@ public class AbstractShip : MonoBehaviour
                     {
                         Debug.Log("checkpoint 2");
 
-                        if (item.tag == "Ship")
+                        if (item.transform.tag == "Ship")
                         {
-                            Debug.Log("checkpoint 3");
 
-                            if (item.gameObject.layer != stats.team)
+
+                            //string bin = stats.enemyTeam.value.ToString();
+                            //Debug.Log(bin);
+                            Debug.Log("checkpoint 3");
+                            itemPos = item.transform.position;
+
+                            if (stats.enemyTeam == item.transform.gameObject.layer)
                             {
                                 Debug.Log("checkpoint 4");
 
-                                turretController.TargetPosition = item.transform.position;
+                                turretController.TargetPosition = item.transform;
                                 break;
                             }
                         }
@@ -101,6 +131,22 @@ public class AbstractShip : MonoBehaviour
     {
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(transform.position, stats.radarRange);
+
+
+        if (gameObject.name == "Destroyer")
+        {
+            Gizmos.color = Color.blue;
+        }
+        if (gameObject.name == "Battleship")
+        {
+            Gizmos.color = Color.red;
+        }
+        if (gameObject.name == "Cruiser")
+        {
+            Gizmos.color = Color.yellow;
+        }
+
+        Gizmos.DrawWireCube(itemPos, new Vector3(2,2,2));
     }
 
 

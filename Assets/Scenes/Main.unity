@@ -1197,6 +1197,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 114490636799662778, guid: 429c38593abb29d47aa1e68c63dcf216,
+        type: 2}
+      propertyPath: stats.team.m_Bits
+      value: 512
+      objectReference: {fileID: 0}
+    - target: {fileID: 114490636799662778, guid: 429c38593abb29d47aa1e68c63dcf216,
+        type: 2}
+      propertyPath: stats.team
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 114490636799662778, guid: 429c38593abb29d47aa1e68c63dcf216,
+        type: 2}
+      propertyPath: stats.enemyTeam
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 429c38593abb29d47aa1e68c63dcf216, type: 2}
   m_IsPrefabAsset: 0
