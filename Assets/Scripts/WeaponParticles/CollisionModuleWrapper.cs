@@ -41,6 +41,10 @@ public class CollisionModuleWrapper : MonoBehaviour
 
     void onSetEnemyTeam()
     {
+        if (ps == null)
+        {
+            ps = GetComponent<ParticleSystem>();
+        }
         var col = ps.collision;
         col.collidesWith = (col.collidesWith | (1 << EnemyTeam));//EnemyTeam;
     }

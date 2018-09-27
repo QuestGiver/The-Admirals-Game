@@ -70,21 +70,21 @@ public class AbstractShip : MonoBehaviour
         }
     }
 
-    public virtual void OnRecieveDestination()
+    public void OnRecieveDestination()//AI and UI touch this in inheriting classes
     {
         agent.destination = _destination;
     }
 
     public Vector3 itemPos;
 
-    public virtual IEnumerator Detection()
+    public virtual IEnumerator Detection()//AI touches this in inheriting classes
     {
         while (true)
         {
             Debug.Log("Running Detection");
 
 
-            foreach (Collider item in Physics.OverlapSphere(transform.position, stats.radarRange, nativeTeam))
+            foreach (Collider item in Physics.OverlapSphere(transform.position, stats.radarRange, nativeEnemyTeam))
             {
                 if (gameObject.name == "Battleship")
                 {
@@ -150,7 +150,7 @@ public class AbstractShip : MonoBehaviour
     }
 
 
-    private void OnParticleCollision(GameObject other)
+    public void OnParticleCollision(GameObject other)
     {
         if (other.tag == "Macro")
         {
@@ -166,10 +166,6 @@ public class AbstractShip : MonoBehaviour
 
     }
 
-    void Update()
-    {
-
-    }
 
 
 

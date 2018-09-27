@@ -82,7 +82,7 @@ public class CameraController : MonoBehaviour
         }
 
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && Input.GetKey(KeyCode.LeftShift))
         {
 
             if (leftClickInstance == false)
@@ -93,7 +93,7 @@ public class CameraController : MonoBehaviour
             }
             
         }
-        if (Input.GetMouseButtonUp(0))
+        if (Input.GetMouseButtonUp(0) && (leftClickInstance == true))
         {
             endPos = Input.mousePosition;
             rb.AddForce((startPos - endPos).x *speed* Time.deltaTime, 0, (startPos - endPos).y * speed * Time.deltaTime);
