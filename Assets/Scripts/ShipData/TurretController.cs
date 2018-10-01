@@ -23,7 +23,7 @@ public class TurretController : MonoBehaviour
     public bool rotate = false;
     public float traversPercent = 0;
     public float traverseSpeed = 0.5f;
-
+    public bool permissionToFire = true;
 
     public Transform TargetPosition
     {
@@ -116,37 +116,39 @@ public class TurretController : MonoBehaviour
         }
 
 
-
-        if (rotate)
+        if (permissionToFire)
         {
-            Debug.Log("Attemting to rotate");
-            for (int i = 0; i < turrets.Length; i++)
+            if (rotate)
             {
-                Debug.Log("iterating rotation loop");
-
-
-
-                Vector3 dir = (_targetPosition.position - turrets[i].position).normalized;
-                Quaternion newRotation = Quaternion.LookRotation(dir, turrets[i].transform.up);
-
-                traversPercent = Time.deltaTime * traverseSpeed;
-                turrets[i].rotation =  Quaternion.Slerp(turrets[i].rotation, newRotation, traversPercent);
-
-                turrets[i].localEulerAngles = new Vector3(0f, turrets[i].localEulerAngles.y, 0f);
-
-                if (traversPercent >= 1)
+                //Debug.Log("Attemting to rotate");
+                for (int i = 0; i < turrets.Length; i++)
                 {
-                    traversPercent = 1;
-                }
+                    //Debug.Log("iterating rotation loop");
 
-                if (traversPercent >= 0.03)
-                {
-                    
-                    EnableFiring(i, true);
-                }
-                else
-                {
-                    EnableFiring(i, false);
+
+
+                    Vector3 dir = (_targetPosition.position - turrets[i].position).normalized;
+                    Quaternion newRotation = Quaternion.LookRotation(dir, turrets[i].transform.up);
+
+                    traversPercent = Time.deltaTime * traverseSpeed;
+                    turrets[i].rotation = Quaternion.Slerp(turrets[i].rotation, newRotation, traversPercent);
+
+                    turrets[i].localEulerAngles = new Vector3(0f, turrets[i].localEulerAngles.y, 0f);
+
+                    if (traversPercent >= 1)
+                    {
+                        traversPercent = 1;
+                    }
+
+                    if (traversPercent >= 0.02)
+                    {
+
+                        EnableFiring(i, true);
+                    }
+                    else
+                    {
+                        EnableFiring(i, false);
+                    }
                 }
             }
         }

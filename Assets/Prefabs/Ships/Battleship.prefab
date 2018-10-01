@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4267020703141574}
   - component: {fileID: 198027052411851424}
   - component: {fileID: 199154076521281766}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ GameObject:
   - component: {fileID: 4075839444828682}
   - component: {fileID: 33133832940412462}
   - component: {fileID: 23565513055643280}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: StarShipModelTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -55,7 +55,7 @@ GameObject:
   - component: {fileID: 4786066540151914}
   - component: {fileID: 33715526865692640}
   - component: {fileID: 23943037886573472}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,7 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4599893718138180}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TurretPrefab (3)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -86,7 +86,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4535796810812156}
   - component: {fileID: 108075639244130562}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +103,7 @@ GameObject:
   - component: {fileID: 4622969428528288}
   - component: {fileID: 198319514830294290}
   - component: {fileID: 199855463025377854}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -118,7 +118,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4004838939293350}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 198880304966199742}
   - component: {fileID: 114184342937558578}
   - component: {fileID: 199574383273500590}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MacroBolter (2)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -153,7 +153,7 @@ GameObject:
   - component: {fileID: 4528370180259590}
   - component: {fileID: 198375566443972902}
   - component: {fileID: 199480918503374424}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -168,8 +168,25 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4047062392728278}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1095756102301332
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224790888514447286}
+  - component: {fileID: 222158366763184310}
+  - component: {fileID: 114227047570138212}
+  m_Layer: 10
+  m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -183,7 +200,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4204810949214382}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -202,7 +219,7 @@ GameObject:
   - component: {fileID: 199805398737381682}
   - component: {fileID: 54609116612886994}
   - component: {fileID: 75761708038552938}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -219,7 +236,7 @@ GameObject:
   - component: {fileID: 4172761686539770}
   - component: {fileID: 33505742464146426}
   - component: {fileID: 23923483103671850}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -238,7 +255,7 @@ GameObject:
   - component: {fileID: 199806676776441852}
   - component: {fileID: 54607071745754544}
   - component: {fileID: 75723435949901160}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -256,9 +273,26 @@ GameObject:
   - component: {fileID: 198953864746874592}
   - component: {fileID: 114416029162110584}
   - component: {fileID: 199655286197532646}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MacroBolter (4)
   m_TagString: Macro
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1208429054757646
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224381477635974992}
+  - component: {fileID: 222088897771705048}
+  - component: {fileID: 114864630420469510}
+  m_Layer: 10
+  m_Name: Background
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -274,7 +308,7 @@ GameObject:
   - component: {fileID: 198319547249580732}
   - component: {fileID: 114148356309282550}
   - component: {fileID: 199854151840019524}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MacroBolter (1)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -291,7 +325,7 @@ GameObject:
   - component: {fileID: 4381473954366962}
   - component: {fileID: 198571053486575864}
   - component: {fileID: 199129394733838792}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -308,7 +342,7 @@ GameObject:
   - component: {fileID: 4577038718482006}
   - component: {fileID: 33096909564827846}
   - component: {fileID: 23287474167189086}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -324,13 +358,32 @@ GameObject:
   m_Component:
   - component: {fileID: 4053474757733866}
   - component: {fileID: 108419202593896678}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &1331345921393406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224268836719846564}
+  - component: {fileID: 223535056627163602}
+  - component: {fileID: 114516086742542396}
+  - component: {fileID: 114710310042085418}
+  - component: {fileID: 114587299339186616}
+  m_Layer: 10
+  m_Name: CanvasHealth
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1362322076802304
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +392,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4343350558227274}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: StarShipModelTwo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -356,7 +409,7 @@ GameObject:
   - component: {fileID: 4038303526271754}
   - component: {fileID: 198050094938225336}
   - component: {fileID: 199407944002864146}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -371,7 +424,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4716278426372126}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TurretPrefab (1)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -386,7 +439,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4956073287036796}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TurretPrefab (4)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -404,7 +457,7 @@ GameObject:
   - component: {fileID: 198564836571884250}
   - component: {fileID: 114433611407672702}
   - component: {fileID: 199962724524381032}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MacroBolter (3)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -423,7 +476,7 @@ GameObject:
   - component: {fileID: 199008433324825516}
   - component: {fileID: 54729020088152034}
   - component: {fileID: 75877588192620966}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -440,7 +493,7 @@ GameObject:
   - component: {fileID: 4648466670541028}
   - component: {fileID: 33179360067129630}
   - component: {fileID: 23995734320286682}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -456,7 +509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4499233832320480}
   - component: {fileID: 108694305097943634}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +525,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4390538991303820}
   - component: {fileID: 108094988135008278}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -487,7 +540,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4073939048896342}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TurretPrefab (2)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -506,7 +559,7 @@ GameObject:
   - component: {fileID: 199144381392656992}
   - component: {fileID: 54781187866229646}
   - component: {fileID: 75089357055437778}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,7 +576,7 @@ GameObject:
   - component: {fileID: 4488203821062672}
   - component: {fileID: 33162396722763670}
   - component: {fileID: 23375795857758390}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -540,7 +593,7 @@ GameObject:
   - component: {fileID: 4923946223587474}
   - component: {fileID: 198452323824576820}
   - component: {fileID: 199033429847310896}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +610,7 @@ GameObject:
   - component: {fileID: 4165702546876344}
   - component: {fileID: 33652488239374368}
   - component: {fileID: 23569371932592938}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -576,7 +629,8 @@ GameObject:
   - component: {fileID: 114981611370279766}
   - component: {fileID: 114945938873852582}
   - component: {fileID: 195383718418030482}
-  m_Layer: 10
+  - component: {fileID: 111857746972689430}
+  m_Layer: 9
   m_Name: Battleship
   m_TagString: Ship
   m_Icon: {fileID: 0}
@@ -591,7 +645,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4909841555448476}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TurretPrefab
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -609,7 +663,7 @@ GameObject:
   - component: {fileID: 198640448248245278}
   - component: {fileID: 114733850280327758}
   - component: {fileID: 199563054218080240}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MacroBolter (4)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -626,7 +680,7 @@ GameObject:
   - component: {fileID: 4152151374916768}
   - component: {fileID: 198706745326267348}
   - component: {fileID: 199219682097005938}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -642,7 +696,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4817127594282212}
   - component: {fileID: 108144920576220926}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -659,7 +713,7 @@ GameObject:
   - component: {fileID: 4465244126806558}
   - component: {fileID: 198232867239675100}
   - component: {fileID: 199671032062035018}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -675,7 +729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4816592447136726}
   - component: {fileID: 108861157649174216}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: Point light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +747,7 @@ GameObject:
   - component: {fileID: 198388049076864572}
   - component: {fileID: 114589349686737876}
   - component: {fileID: 199459161361872996}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: MacroBolter (3)
   m_TagString: Macro
   m_Icon: {fileID: 0}
@@ -710,7 +764,7 @@ GameObject:
   - component: {fileID: 4740804062155238}
   - component: {fileID: 198828592708213148}
   - component: {fileID: 199137629422785204}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanTrail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -729,8 +783,24 @@ GameObject:
   - component: {fileID: 199412475950379712}
   - component: {fileID: 54436101976455728}
   - component: {fileID: 75375725296387656}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanMissiles
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1747721229065890
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224972780422456424}
+  - component: {fileID: 114296355892218092}
+  m_Layer: 10
+  m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -744,7 +814,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4675743392096406}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: TurretPrefab (5)
   m_TagString: Turret
   m_Icon: {fileID: 0}
@@ -759,7 +829,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4192077943848614}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -776,7 +846,7 @@ GameObject:
   - component: {fileID: 4985210312755800}
   - component: {fileID: 198415094232290582}
   - component: {fileID: 199561089028360276}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -793,7 +863,7 @@ GameObject:
   - component: {fileID: 4113021573166702}
   - component: {fileID: 198498003101092152}
   - component: {fileID: 199306802203672022}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -808,8 +878,23 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4452441432170268}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1920919721147128
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 224404387116550294}
+  m_Layer: 10
+  m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -827,7 +912,7 @@ GameObject:
   - component: {fileID: 199714421335410864}
   - component: {fileID: 54319850489784100}
   - component: {fileID: 75117151220291716}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanMissiles
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -844,7 +929,7 @@ GameObject:
   - component: {fileID: 4320317959286764}
   - component: {fileID: 198536010631399098}
   - component: {fileID: 199598153940744866}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UnityChanBlast
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -859,7 +944,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4129689683470984}
-  m_Layer: 10
+  m_Layer: 9
   m_Name: UniversalTurret
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -927,7 +1012,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1512287482707730}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.94, y: 21.900002, z: 14.470024}
+  m_LocalPosition: {x: 3.94, y: 20.910002, z: 14.470024}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4204810949214382}
@@ -1118,7 +1203,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1362322076802304}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.9899998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4075839444828682}
@@ -1297,7 +1382,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1024960355932814}
   m_LocalRotation: {x: 0, y: 0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 16.08, z: 7.800026}
+  m_LocalPosition: {x: 0, y: 15.09, z: 7.800026}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4047062392728278}
@@ -1351,7 +1436,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1758877768366130}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.86, y: 21.900003, z: 14.470024}
+  m_LocalPosition: {x: -3.86, y: 20.910004, z: 14.470024}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4192077943848614}
@@ -1379,7 +1464,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1378070140991082}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 21.900002, z: 7.800026}
+  m_LocalPosition: {x: 0, y: 20.910002, z: 7.800026}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4452441432170268}
@@ -1480,7 +1565,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1537718324321496}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 21.900002, z: 1.2599945}
+  m_LocalPosition: {x: 0, y: 20.910002, z: 1.2599945}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4129689683470984}
@@ -1525,7 +1610,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1416962084284684}
   m_LocalRotation: {x: -0, y: -0, z: 1, w: 0}
-  m_LocalPosition: {x: 0, y: 14.09, z: -8.49}
+  m_LocalPosition: {x: 0, y: 13.1, z: -8.49}
   m_LocalScale: {x: 10, y: 10, z: 10}
   m_Children:
   - {fileID: 4004838939293350}
@@ -1563,6 +1648,7 @@ Transform:
   - {fileID: 4599893718138180}
   - {fileID: 4956073287036796}
   - {fileID: 4675743392096406}
+  - {fileID: 224268836719846564}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2263,6 +2349,21 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!111 &111857746972689430
+Animation:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1532384165046670}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 7c9f895029a15cd4fa8c6372ccd11ff4, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: 7c9f895029a15cd4fa8c6372ccd11ff4, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 0
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!114 &114148356309282550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2287,6 +2388,81 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyTeam: 0
+--- !u!114 &114227047570138212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095756102301332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.18271768, g: 0.8773585, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!114 &114296355892218092
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747721229065890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 224790888514447286}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 1
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
 --- !u!114 &114416029162110584
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2311,6 +2487,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyTeam: 0
+--- !u!114 &114516086742542396
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331345921393406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!114 &114587299339186616
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331345921393406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ba728de7330b7841bbad79e3b7db186, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship: {fileID: 114981611370279766}
+  healthbar: {fileID: 114296355892218092}
 --- !u!114 &114589349686737876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2323,6 +2533,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyTeam: 0
+--- !u!114 &114710310042085418
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331345921393406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
 --- !u!114 &114733850280327758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2335,6 +2561,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _enemyTeam: 0
+--- !u!114 &114864630420469510
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208429054757646}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0.007857815, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
 --- !u!114 &114945938873852582
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2360,6 +2613,7 @@ MonoBehaviour:
   rotate: 0
   traversPercent: 0
   traverseSpeed: 3
+  permissionToFire: 1
 --- !u!114 &114981611370279766
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2375,11 +2629,12 @@ MonoBehaviour:
     health: 300
     speed: 30
     radarRange: 50
-    team: 10
-    enemyTeam: 9
+    team: 9
+    enemyTeam: 10
   turretController: {fileID: 114945938873852582}
   agent: {fileID: 195383718418030482}
   _destination: {x: 0, y: 0, z: 0}
+  itemPos: {x: 0, y: 0, z: 0}
 --- !u!195 &195383718418030482
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -113689,3 +113944,131 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!222 &222088897771705048
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208429054757646}
+  m_CullTransparentMesh: 0
+--- !u!222 &222158366763184310
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095756102301332}
+  m_CullTransparentMesh: 0
+--- !u!223 &223535056627163602
+Canvas:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331345921393406}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 2
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &224268836719846564
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1331345921393406}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -30.499954}
+  m_LocalScale: {x: 0.49999997, y: 0.50000024, z: 0.50000024}
+  m_Children:
+  - {fileID: 224972780422456424}
+  m_Father: {fileID: 4979460748022612}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.5000036, y: 26.500004}
+  m_SizeDelta: {x: 777, y: 437}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224381477635974992
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1208429054757646}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224972780422456424}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224404387116550294
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1920919721147128}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224790888514447286}
+  m_Father: {fileID: 224972780422456424}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.25}
+  m_AnchorMax: {x: 1, y: 0.75}
+  m_AnchoredPosition: {x: 2.5, y: 0}
+  m_SizeDelta: {x: -5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224790888514447286
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095756102301332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 224404387116550294}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_SizeDelta: {x: 5, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &224972780422456424
+RectTransform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1747721229065890}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 224381477635974992}
+  - {fileID: 224404387116550294}
+  m_Father: {fileID: 224268836719846564}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 20}
+  m_Pivot: {x: 0.5, y: 0.5}

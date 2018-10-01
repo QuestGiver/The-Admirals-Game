@@ -8,7 +8,7 @@ using System;
 [System.Serializable]
 public struct ShipStats
 {
-    public int health;
+    public float health;
     public int speed;
     public int radarRange;
 
@@ -26,6 +26,7 @@ public class AbstractShip : MonoBehaviour
     public ShipStats stats;
     public TurretController turretController;
     public NavMeshAgent agent;
+    private Animation deathAnimation;
 
     LayerMask nativeTeam;
     LayerMask nativeEnemyTeam;
@@ -40,7 +41,7 @@ public class AbstractShip : MonoBehaviour
 
     void Start()
     {
-
+        deathAnimation = GetComponent<Animation>();
         nativeTeam = (nativeTeam | (1 << stats.team));
         nativeEnemyTeam = (nativeEnemyTeam | (1 << stats.enemyTeam));
 
@@ -127,40 +128,58 @@ public class AbstractShip : MonoBehaviour
 
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, stats.radarRange);
+    //private void OnDrawGizmos()
+    //{
+    //    Gizmos.color = Color.red;
+    //    Gizmos.DrawWireSphere(transform.position, stats.radarRange);
 
 
-        if (gameObject.name == "Destroyer")
-        {
-            Gizmos.color = Color.blue;
-        }
-        if (gameObject.name == "Battleship")
-        {
-            Gizmos.color = Color.red;
-        }
-        if (gameObject.name == "Cruiser")
-        {
-            Gizmos.color = Color.yellow;
-        }
+    //    if (gameObject.name == "Destroyer")
+    //    {
+    //        Gizmos.color = Color.blue;
+    //    }
+    //    if (gameObject.name == "Battleship")
+    //    {
+    //        Gizmos.color = Color.red;
+    //    }
+    //    if (gameObject.name == "Cruiser")
+    //    {
+    //        Gizmos.color = Color.yellow;
+    //    }
 
-        Gizmos.DrawWireCube(itemPos, new Vector3(2,2,2));
-    }
+    //    Gizmos.DrawWireCube(itemPos, new Vector3(2,2,2));
+    //}
 
+    public delegate void OnRecievedDamage();
+    public OnRecievedDamage recievedDamage;
 
     public void OnParticleCollision(GameObject other)
     {
         if (other.tag == "Macro")
         {
-            stats.health -= 2;
+            stats.health -= 1f;
             Mathf.Clamp(stats.health, 0, 100);
+            if (stats.health <= 0)
+            {
+                gameObject.GetComponent<Collider>().enabled = false;
+                turretController.permissionToFire = false;
+                deathAnimation.Play();
+            }
+            recievedDamage();
         }
 
         if (other.tag == "Inferno")
         {
-            stats.health -= 7;
+            stats.health -= 5;
+            Mathf.Clamp(stats.health, 0, 100);
+            if (stats.health <= 0)
+            {
+                gameObject.GetComponent<Collider>().enabled = false;
+                turretController.permissionToFire = false;
+                deathAnimation.Play();
+                
+            }
+            recievedDamage();
         }
 
 
