@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ShipSelection : MonoBehaviour
 {
@@ -9,18 +10,18 @@ public class ShipSelection : MonoBehaviour
     Transform[] AvailibleShips;
 
     [SerializeField]
-    List<Transform> SelectedShips;
+    List<AbstractShip> SelectedShips;
 
-    public GameObject selectionBox;
+    public RectTransform selectionBox;
 
 
 
 
 
     // Use this for initialization
-    void Start()
+    void Awake()
     {
-        selectionBox.SetActive(false);
+        selectionBox.gameObject.SetActive(false);
 
         if (AvailibleShips.Length == 0)
         {
@@ -34,8 +35,12 @@ public class ShipSelection : MonoBehaviour
                 {
                     Debug.LogError("AvailibleShips[" + i + "] is null");
                 }
+                else
+                {
+                    AvailibleShips[i].GetComponent<HelmAI>().AIControlled = false;
+                }
             }
-        }     
+        }
     }
 
     bool leftClickInstance;
@@ -49,20 +54,22 @@ public class ShipSelection : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
-            selectionBox.transform.position = startPos;
 
-            selectionBox.SetActive(true);
+
+            
 
             Vector3 selectionBoxEnd = Input.mousePosition;
 
-           
+                selectionBox.gameObject.SetActive(true);
 
-            //selectionBox.transform.localScale = Camera.main.ScreenToWorldPoint((startPos - selectionBoxEnd));
-            
+            selectionBox.transform.localScale = (startPos - selectionBoxEnd).normalized;
+
 
             if (leftClickInstance == false)
             {
                 SelectedShips.Clear();
+                selectionBox.transform.position = startPos;
+
                 startPos = Input.mousePosition;
 
                 leftClickInstance = true;
@@ -72,7 +79,7 @@ public class ShipSelection : MonoBehaviour
 
 
         if (Input.GetMouseButtonUp(0))
-        {          
+        {
             endPos = Input.mousePosition;
 
             for (int i = 0; i < AvailibleShips.Length; i++)
@@ -82,13 +89,14 @@ public class ShipSelection : MonoBehaviour
                     shipX = Camera.main.WorldToScreenPoint(AvailibleShips[i].transform.position).x;
                     shipY = Camera.main.WorldToScreenPoint(AvailibleShips[i].transform.position).y;
 
+                    Debug.Log("checking selected ships");
 
-
-                    if (Mathf.Clamp(shipX, startPos.x, endPos.x) == shipX)
+                    if (Mathf.Clamp(shipX, LesserNumber(startPos.x, endPos.x), GreaterNumber(startPos.x, endPos.x)) == shipX)
                     {
-                        if (Mathf.Clamp(shipY, startPos.y, endPos.y) == shipY)
+                        if (Mathf.Clamp(shipY, LesserNumber( startPos.y, endPos.y), GreaterNumber(startPos.y, endPos.y)) == shipY)
                         {
-                            SelectedShips.Add(AvailibleShips[i]);
+
+                            SelectedShips.Add(AvailibleShips[i].GetComponent<AbstractShip>());
                         }
                     }
                 }
@@ -99,17 +107,53 @@ public class ShipSelection : MonoBehaviour
 
             }
 
-            selectionBox.SetActive(false);
+            selectionBox.gameObject.SetActive(false);
 
             leftClickInstance = false;
         }
 
         if (Input.GetMouseButtonDown(1))
         {
-            for (int i = 0; i < SelectedShips.Count-1; i++)
+            for (int i = 0; i < SelectedShips.Count - 1; i++)
             {
-                SelectedShips[i].GetComponent<AbstractShip>().Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+                //Debug.Log("assigning destination");
+
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
+
+                int mask = LayerMask.NameToLayer("UI");
+
+                Physics.Raycast(ray, out hit, 200, mask, QueryTriggerInteraction.Collide);
+
+                //SelectedShips[i].Destination = Camera.main.ScreenToWorldPoint(Input.mousePosition); 
+
+                SelectedShips[i].Destination = hit.point;
             }
         }
+    }
+
+    public float GreaterNumber(float A, float B)
+    {
+        if (A > B)
+        {
+            return A;
+        }
+        else
+        {
+            return B;
+        }
+    }
+
+    public float LesserNumber(float A, float B)
+    {
+        if (A < B)
+        {
+            return A;
+        }
+        else
+        {
+            return B;
+        }
+        
     }
 }

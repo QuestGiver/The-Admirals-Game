@@ -124,6 +124,7 @@ GameObject:
   - component: {fileID: 114370067127504262}
   - component: {fileID: 195189873999187466}
   - component: {fileID: 111241543718482292}
+  - component: {fileID: 114972738212080832}
   m_Layer: 10
   m_Name: Destroyer
   m_TagString: Ship
@@ -337,7 +338,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1678671681218278}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.33, y: 0, z: -80.53999}
+  m_LocalPosition: {x: -2.33, y: 0, z: -21.5}
   m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children:
   - {fileID: 4857844778783192}
@@ -571,7 +572,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stats:
     health: 200
-    speed: 40
+    speed: 5
     radarRange: 50
     team: 10
     enemyTeam: 9
@@ -620,6 +621,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ship: {fileID: 114374766557633278}
   healthbar: {fileID: 114125049481497848}
+--- !u!114 &114972738212080832
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1678671681218278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10af36b9e5cbb5f4ea7d97d78bc212c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ship: {fileID: 114374766557633278}
+  orderCooldown: 0.5
+  AIControlled: 0
+  range: 40
 --- !u!195 &195189873999187466
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -628,7 +644,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 1678671681218278}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 28.83
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -5300,7 +5316,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0
@@ -19057,7 +19073,7 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
   randomSeed: 0

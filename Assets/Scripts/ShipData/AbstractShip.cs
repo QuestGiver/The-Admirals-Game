@@ -9,7 +9,7 @@ using System;
 public struct ShipStats
 {
     public float health;
-    public int speed;
+    public float speed;
     public int radarRange;
 
 
@@ -20,6 +20,7 @@ public struct ShipStats
 
 
 [RequireComponent(typeof(TurretController))]
+[RequireComponent(typeof(NavMeshAgent))]
 public class AbstractShip : MonoBehaviour
 {
 
@@ -36,6 +37,8 @@ public class AbstractShip : MonoBehaviour
     private Vector3 _destination;
     private void Reset()//on clicking reset button in editor
     {
+        agent = GetComponent<NavMeshAgent>();
+
         turretController = GetComponent<TurretController>();
     }
 
@@ -44,7 +47,7 @@ public class AbstractShip : MonoBehaviour
         deathAnimation = GetComponent<Animation>();
         nativeTeam = (nativeTeam | (1 << stats.team));
         nativeEnemyTeam = (nativeEnemyTeam | (1 << stats.enemyTeam));
-
+        Destination = agent.destination;
 
         if (stats.team != gameObject.layer)
         {
@@ -67,13 +70,17 @@ public class AbstractShip : MonoBehaviour
         set
         {
             _destination = value;
-            OnRecieveDestination();
+            if (stats.health > 0)
+            {
+                OnRecieveDestination();
+            }
         }
     }
 
     public void OnRecieveDestination()//AI and UI touch this in inheriting classes
     {
-        agent.destination = _destination;
+        agent.SetDestination(Destination);
+        
     }
 
     public Vector3 itemPos;
@@ -82,22 +89,22 @@ public class AbstractShip : MonoBehaviour
     {
         while (true)
         {
-            Debug.Log("Running Detection");
+           // Debug.Log("Running Detection");
 
 
             foreach (Collider item in Physics.OverlapSphere(transform.position, stats.radarRange, nativeEnemyTeam))
             {
-                if (gameObject.name == "Battleship")
-                {
-                    Debug.Log(nativeTeam.value);
-                    Debug.Log(nativeEnemyTeam.value);
-                }
+                //if (gameObject.name == "Battleship")
+                //{
+                //    Debug.Log(nativeTeam.value);
+                //    Debug.Log(nativeEnemyTeam.value);
+                //}
                 if (item != null)
                 {
-                    Debug.Log("checkpoint 1");
+                    //Debug.Log("checkpoint 1");
                     if (item != gameObject.GetComponent<Collider>())
                     {
-                        Debug.Log("checkpoint 2");
+                        //Debug.Log("checkpoint 2");
 
                         if (item.transform.tag == "Ship")
                         {
@@ -105,12 +112,12 @@ public class AbstractShip : MonoBehaviour
 
                             //string bin = stats.enemyTeam.value.ToString();
                             //Debug.Log(bin);
-                            Debug.Log("checkpoint 3");
+                            //Debug.Log("checkpoint 3");
                             itemPos = item.transform.position;
 
                             if (stats.enemyTeam == item.transform.gameObject.layer)
                             {
-                                Debug.Log("checkpoint 4");
+                               // Debug.Log("checkpoint 4");
 
                                 turretController.TargetPosition = item.transform;
                                 break;
@@ -163,6 +170,7 @@ public class AbstractShip : MonoBehaviour
             {
                 gameObject.GetComponent<Collider>().enabled = false;
                 turretController.permissionToFire = false;
+                agent.enabled = false;
                 deathAnimation.Play();
             }
             recievedDamage();
@@ -170,12 +178,13 @@ public class AbstractShip : MonoBehaviour
 
         if (other.tag == "Inferno")
         {
-            stats.health -= 5;
+            stats.health -= 10;
             Mathf.Clamp(stats.health, 0, 100);
             if (stats.health <= 0)
             {
                 gameObject.GetComponent<Collider>().enabled = false;
                 turretController.permissionToFire = false;
+                agent.enabled = false;
                 deathAnimation.Play();
                 
             }

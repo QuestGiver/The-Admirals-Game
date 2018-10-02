@@ -31,7 +31,7 @@ public class HealthManager : MonoBehaviour
         healthbar.value = ship.stats.health;
         if (healthbar.value <= 0)
         {
-            healthbar.enabled = false;
+            gameObject.SetActive(false);
         }
 
     }
