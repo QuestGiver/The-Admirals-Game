@@ -14,7 +14,7 @@ public class ShipSelection : MonoBehaviour
 
     public RectTransform selectionBox;
 
-
+    Rect rectangle;
 
 
 
@@ -22,7 +22,7 @@ public class ShipSelection : MonoBehaviour
     void Awake()
     {
         selectionBox.gameObject.SetActive(false);
-
+        rectangle = selectionBox.rect;
         if (AvailibleShips.Length == 0)
         {
             Debug.LogError("AvailibleShip length is 0");
@@ -52,28 +52,37 @@ public class ShipSelection : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
-
-
-            
-
-            Vector3 selectionBoxEnd = Input.mousePosition;
-
-                selectionBox.gameObject.SetActive(true);
-
-            selectionBox.transform.localScale = (startPos - selectionBoxEnd).normalized;
-
 
             if (leftClickInstance == false)
             {
                 SelectedShips.Clear();
-                selectionBox.transform.position = startPos;
 
                 startPos = Input.mousePosition;
+                selectionBox.transform.position = startPos;
 
+
+                selectionBox.gameObject.SetActive(true);
                 leftClickInstance = true;
             }
+            
+
+            Vector3 selectionBoxEnd = Input.mousePosition;
+
+
+
+            rectangle.width = startPos.x - selectionBoxEnd.x;
+            rectangle.height = startPos.y - selectionBoxEnd.y;
+
+
+
+            
+        }
+
+        if (leftClickInstance)
+        {
+
         }
 
 
@@ -107,8 +116,8 @@ public class ShipSelection : MonoBehaviour
 
             }
 
-            selectionBox.gameObject.SetActive(false);
 
+            selectionBox.gameObject.SetActive(false);
             leftClickInstance = false;
         }
 
