@@ -12,17 +12,30 @@ public class ShipSelection : MonoBehaviour
     [SerializeField]
     List<AbstractShip> SelectedShips;
 
-    public RectTransform selectionBox;
+    public RectTransform selectionBoxQuadrantOne;
+    public RectTransform selectionBoxQuadrantTwo;
+    public RectTransform selectionBoxQuadrantThree;
+    public RectTransform selectionBoxQuadrantFour;
 
-    Rect rectangle;
+
 
 
 
     // Use this for initialization
     void Awake()
     {
-        selectionBox.gameObject.SetActive(false);
-        rectangle = selectionBox.rect;
+
+
+        selectionBoxQuadrantOne.gameObject.SetActive(false);
+    
+        selectionBoxQuadrantTwo.gameObject.SetActive(false);
+
+        selectionBoxQuadrantThree.gameObject.SetActive(false);
+
+        selectionBoxQuadrantFour.gameObject.SetActive(false);
+
+       
+
         if (AvailibleShips.Length == 0)
         {
             Debug.LogError("AvailibleShip length is 0");
@@ -60,28 +73,33 @@ public class ShipSelection : MonoBehaviour
                 SelectedShips.Clear();
 
                 startPos = Input.mousePosition;
-                selectionBox.transform.position = startPos;
+                selectionBoxQuadrantOne.transform.position = startPos;
+                selectionBoxQuadrantTwo.transform.position = startPos;
+                selectionBoxQuadrantThree.transform.position = startPos;
+                selectionBoxQuadrantFour.transform.position = startPos;
 
-
-                selectionBox.gameObject.SetActive(true);
+                selectionBoxQuadrantOne.gameObject.SetActive(true);
+                selectionBoxQuadrantTwo.gameObject.SetActive(true);
+                selectionBoxQuadrantThree.gameObject.SetActive(true);
+                selectionBoxQuadrantFour.gameObject.SetActive(true);
                 leftClickInstance = true;
             }
             
 
             Vector3 selectionBoxEnd = Input.mousePosition;
+            selectionBoxQuadrantOne.sizeDelta = new Vector2(selectionBoxEnd.x - startPos.x, selectionBoxEnd.y - startPos.y);
+            selectionBoxQuadrantTwo.sizeDelta = new Vector2(-(selectionBoxEnd.x - startPos.x), selectionBoxEnd.y - startPos.y);
+            selectionBoxQuadrantThree.sizeDelta = new Vector2(-(selectionBoxEnd.x - startPos.x), -(selectionBoxEnd.y - startPos.y));
+            selectionBoxQuadrantFour.sizeDelta = new Vector2(selectionBoxEnd.x - startPos.x, -(selectionBoxEnd.y - startPos.y));
 
 
+            
 
-            rectangle.width = startPos.x - selectionBoxEnd.x;
-            rectangle.height = startPos.y - selectionBoxEnd.y;
+            //rectangle.width = startPos.x - selectionBoxEnd.x;
+            //rectangle.height = startPos.y - selectionBoxEnd.y;
 
             //https://answers.unity.com/questions/973572/recttransform-wont-resize.html
 
-
-        }
-
-        if (leftClickInstance)
-        {
 
         }
 
@@ -116,8 +134,13 @@ public class ShipSelection : MonoBehaviour
 
             }
 
+            selectionBoxQuadrantOne.gameObject.SetActive(false);
 
-            selectionBox.gameObject.SetActive(false);
+            selectionBoxQuadrantTwo.gameObject.SetActive(false);
+
+            selectionBoxQuadrantThree.gameObject.SetActive(false);
+
+            selectionBoxQuadrantFour.gameObject.SetActive(false);
             leftClickInstance = false;
         }
 

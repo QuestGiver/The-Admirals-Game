@@ -2,6 +2,7 @@ fileFormatVersion: 2
 guid: eba040108e81d4644a5c831b8fadcd29
 TextureImporter:
   fileIDToRecycleName:
+    8900000: generatedCubemap
     21300000: Grids_0
   externalObjects: {}
   serializedVersion: 7
@@ -43,7 +44,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 500
