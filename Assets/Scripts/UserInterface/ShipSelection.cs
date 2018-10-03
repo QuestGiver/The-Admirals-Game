@@ -75,9 +75,9 @@ public class ShipSelection : MonoBehaviour
             rectangle.width = startPos.x - selectionBoxEnd.x;
             rectangle.height = startPos.y - selectionBoxEnd.y;
 
+            //https://answers.unity.com/questions/973572/recttransform-wont-resize.html
 
 
-            
         }
 
         if (leftClickInstance)
